@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    color: cyan;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card {
+    text-align: center;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(0,255,255,0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    50% { transform: translateY(-12px); }
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    box-shadow: 0 0 20px cyan;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+h2 {
+    color: cyan;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skill-grid span {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    background: rgba(0,255,255,0.15);
+    box-shadow: 0 0 10px cyan;
+    transition: 0.3s;
+}
+
+.skill-grid span:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project-card {
+    width: 280px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+}
